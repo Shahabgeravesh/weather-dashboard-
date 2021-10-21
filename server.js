@@ -22,7 +22,7 @@ if (process.env.NODE_ENV === 'production') {
 // Configure session
 app.use(
   session({
-    secret: process.env.SECRET,
+    secret: 'SECRET',
     resave: true,
     saveUninitialized: true,
     cookie: {
