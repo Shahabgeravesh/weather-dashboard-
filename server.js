@@ -9,6 +9,8 @@ const PORT = process.env.PORT || 3000;
 
 require("dotenv").config();
 
+//db connection
+const database = require('./config/connection');
 // Configure express input / output
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
